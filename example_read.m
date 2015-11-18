@@ -6,3 +6,4 @@ c = ones(60251,1);
 %there are text in our data so we cannot use matrix
 c = strcmp(businesslicences{:,6},'Issued');
 num = sum(c~=0);
+%test comment: hi edwin and al

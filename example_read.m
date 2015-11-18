@@ -1,8 +1,8 @@
-load businesslicences.mat
-load businesslicences2011.mat
-load businesslicences2012.mat
-load businesslicences2013.mat
-load businesslicences2014.mat
+% load businesslicences.mat
+% load businesslicences2011.mat
+% load businesslicences2012.mat
+% load businesslicences2013.mat
+% load businesslicences2014.mat
 
 %test code to see the number of issued businesses
 c = ones(60251,1);
@@ -11,3 +11,5 @@ c = ones(60251,1);
 c = strcmp(businesslicences{:,6},'Issued');
 num = sum(c~=0);
 %test comment: hi edwin and al
+hi = strmatch('University Blvd',businesslicences2012{:,14});
+% num1 = sum(hi~=0);

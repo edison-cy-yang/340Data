@@ -5,7 +5,11 @@ cleanBusinessLicences = businesslicences;
 cleanBusinessLicences.Status = categorical(cleanBusinessLicences.Status);
 cleanBusinessLicences.BusinessType = categorical(cleanBusinessLicences.BusinessType);
 
+% Add concatenated BusinessName and Business
+
 % Generate Array containing all words from BusinessName and
-% BusinessTradeName
-% A = strsplit(cleanBusinessLicences.BusinessName(2));
-A = regexp();
+% BusinessTradeName (delimeters: empty-space, ...)
+delims = ' |\(|\)|\"|\&|[0-9]*|\+|\-|\#|\,|\.|\;|\@|\/|''';
+splitTable = regexpi(cleanBusinessLicences.BusinessName, delims, 'split');
+bagOfWords = unique([splitTable{:}]');
+bagOfWords = bagOfWords(not(cellfun('isempty', bagOfWords)));

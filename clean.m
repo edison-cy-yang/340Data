@@ -10,8 +10,9 @@ cleanBusinessLicences1 = table(strcat(cleanBusinessLicences.BusinessName, '-', c
 cleanBusinessLicences1.Properties.VariableNames = {'ConcatName'};
 cleanBusinessLicences = [cleanBusinessLicences cleanBusinessLicences1];
 
-% Generate Array containing all words from BusinessName and
-% BusinessTradeName (delimeters: empty-space, ...)
+% Generate Array containing all words from BusinessName and 
+% BusinessTradeName (delimeters: ' ', '(', ')', '"', '&', [0-9]*, '+', 
+% '-', '#', ',', '.', ';', '@', '/', "'", '$', '!', ':', '*')
 delims = ' |\(|\)|\"|\&|[0-9]*|\+|\-|\#|\,|\.|\;|\@|\/|''|\$|\!|\:|\*';
 splitTable = regexpi(cleanBusinessLicences.ConcatName, delims, 'split');
 bagOfWords = unique([splitTable{:}]');

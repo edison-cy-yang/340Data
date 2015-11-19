@@ -1,0 +1,11 @@
+% Duplicate businesslicences table
+cleanBusinessLicences = businesslicences;
+
+% Convert Status, BusinessType to a categorical arrays
+cleanBusinessLicences.Status = categorical(cleanBusinessLicences.Status);
+cleanBusinessLicences.BusinessType = categorical(cleanBusinessLicences.BusinessType);
+
+% Generate Array containing all words from BusinessName and
+% BusinessTradeName
+% A = strsplit(cleanBusinessLicences.BusinessName(2));
+A = regexp();

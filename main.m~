@@ -40,3 +40,4 @@ truncArray(TF(:,2)==0,:) = [];
 % 22-Marpole
 
 westEnd = strmatch('01-West End', truncArray(:,2), 'exact');
+

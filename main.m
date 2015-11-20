@@ -1,6 +1,6 @@
 % Load datasets
-load businesslicences.mat
-load LocalArea.mat
+% load businesslicences.mat
+% load LocalArea.mat
 
 % Get needed columns
 LocalArea2 = businesslicences.LocalArea;
@@ -29,3 +29,12 @@ end
 sortedCounts = sortedCounts(:,1:10);
 indicesCounts = indicesCounts(:,1:10);
 
+%get the unique business types
+uniqueType = unique(truncArray(:,1));
+
+for j=1:n
+    fprintf('\nTop 10 business types for area %s: \n',LocalArea{j,1});
+    for k=1:10
+        fprintf('%s\n',uniqueType{indicesCounts(j,k),1});
+    end
+end

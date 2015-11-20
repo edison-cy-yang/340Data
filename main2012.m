@@ -1,6 +1,6 @@
 % Load datasets
-% load businesslicences.mat
-% load LocalArea.mat
+load businesslicences2012.mat
+load LocalArea.mat
 
 % Get needed columns
 LocalArea2 = businesslicences.LocalArea;
@@ -32,7 +32,6 @@ indicesCounts = indicesCounts(:,1:10);
 %get the unique business types
 uniqueType = unique(truncArray(:,1));
 
-%
 C = cell(n,10);
 
 for j=1:n
@@ -46,4 +45,4 @@ end
 
 T = cell2table(C);
 T.Properties.RowNames = {'West End','Central Business/Downtown','Strathcona','Grandview-Woodland','Hastings-Sunrise','West Point Grey','Kitsilano','Fairview','Mount Pleasant','Dunbar-Southlands','Arbutus Ridge','Shaughnessy','South Cambie','Riley Park','Kensington-Cedar Cottage','Renfrew-Collingwood','Kerrisdale','Oakridge','Sunset','Victoria-Fraserview','Killarney','Marpole'};
-writetable(T,'Top10Table.csv');
+writetable(T,'Top10Table2012.csv');

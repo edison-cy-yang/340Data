@@ -1,0 +1,14 @@
+% load clean_business_licences.mat;
+
+% uniqueAreas = unique(clean_business_licences{:,2});
+
+clean_business_licences.BusinessType = categorical(clean_business_licences.BusinessType);
+clean_business_licences.LocalArea = categorical(clean_business_licences.LocalArea);
+
+% mode(clean_business_licences.LocalArea);
+[N D] = size(clean_business_licences{:,1});
+uniqueAreas = unique(clean_business_licences.LocalArea);
+
+for i = 1:N
+    
+end

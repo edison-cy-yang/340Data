@@ -42,3 +42,4 @@ truncArray(TF(:,2)==0,:) = [];
 we = truncArray(strmatch('01-West End', truncArray(:,2), 'exact'),1);
 weTable = cell2table(we,'VariableNames',{'LocalArea'});
 weTable.LocalArea = categorical(weTable.LocalArea);
+counts = hist(weTable.LocalArea);

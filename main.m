@@ -32,9 +32,12 @@ indicesCounts = indicesCounts(:,1:10);
 %get the unique business types
 uniqueType = unique(truncArray(:,1));
 
-for j=1:n
-    fprintf('\nTop 10 business types for area %s: \n',LocalArea{j,1});
-    for k=1:10
-        fprintf('%s\n',uniqueType{indicesCounts(j,k),1});
-    end
-end
+topTen = cell(22,10);
+% topTen = cell2table(topTen);
+% for j=1:n
+%     for k=1:10
+%         topTen(j,k) = uniqueType{indicesCounts(j,k),1};
+%     end
+% end
+
+topTen(:,:) = uniqueType{indicesCounts(1:22,1:10),1};

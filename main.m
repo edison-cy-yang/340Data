@@ -32,9 +32,17 @@ indicesCounts = indicesCounts(:,1:10);
 %get the unique business types
 uniqueType = unique(truncArray(:,1));
 
+C = cell(n,10);
+
 for j=1:n
     fprintf('\nTop 10 business types for area %s: \n',LocalArea{j,1});
+    
     for k=1:10
         fprintf('%s\n',uniqueType{indicesCounts(j,k),1});
+        C{j,k} = uniqueType{indicesCounts(j,k),1};
     end
 end
+
+T = cell2table(C);
+T.Properties.RowNames = {'West End','Central Business/Downtown','Strathcona','Grandview-Woodland','Hastings-Sunrise','West Point Grey','Kitsilano','Fairview','Mount Pleasant','Dunbar-Southlands','Arbutus Ridge','Shaughnessy','South Cambie','Riley Park','Kensington-Cedar Cottage','Renfrew-Collingwood','Kerrisdale','Oakridge','Sunset','Victoria-Fraserview','Killarney','Marpole'};
+writetable(T,'Top10Table.csv');

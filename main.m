@@ -28,3 +28,4 @@ end
 
 sortedCounts = sortedCounts(:,1:10);
 indicesCounts = indicesCounts(:,1:10);
+

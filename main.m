@@ -1,3 +1,7 @@
+% Load datasets
+load businesslicences.mat
+load LocalArea.mat
+
 % Get needed columns
 LocalArea2 = businesslicences.LocalArea;
 BusinessType = businesslicences.BusinessType;
@@ -21,3 +25,6 @@ for i = 1:n
 end
 
 [sortedCounts indicesCounts] = sort(counts, 2, 'descend');
+
+sortedCounts = sortedCounts(:,1:10);
+indicesCounts = indicesCounts(:,1:10);

@@ -25,20 +25,18 @@ truncArray(TF(:,2)==0,:) = [];
 % 07-Kitsilano
 % 08-Fairview
 % 09-Mount Pleasant
-% 10-Dunbar-Southlands
-% 11-Arbutus Ridge
-% 12-Shaughnessy
-% 13-South Cambie
-% 14-Riley Park
-% 15-Kensington-Cedar Cottage
-% 16-Renfrew-Collingwood
-% 17-Kerrisdale
-% 18-Oakridge
-% 19-Sunset
-% 20-Victoria-Fraserview
-% 21-Killarney
+% 10-Dunbar-Southlands'
+% 11-Arbutus Ridge'
+% 12-Shaughnessy'
+% 13-South Cambie'
+% 14-Riley Park'
+% 15-Kensington-Cedar Cottage'
+% 16-Renfrew-Collingwood'
+% 17-Kerrisdale'
+% 18-Oakridge'
+% 19-Sunset'
+% 20-Victoria-Fraserview'
+% 21-Killarney'
 % 22-Marpole
 
-we = truncArray(strmatch('01-West End', truncArray(:,2), 'exact'),1);
-weTable = cell2table(we,'VariableNames',{'LocalArea'});
-weTable.LocalArea = categorical(weTable.LocalArea);
+westEnd = strmatch('01-West End', truncArray(:,2), 'exact');

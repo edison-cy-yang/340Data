@@ -1,0 +1,23 @@
+C1,C2,C3,C4,C5
+Office,Apartment House,Retail Dealer,Restaurant Class 1,Apartment House Strata
+Office,Retail Dealer,Financial Services,Restaurant Class 1,Ltd Service Food Establishment
+Office,Wholesale  Dealer,Manufacturer,Retail Dealer,Retail Dealer - Food
+Apartment House,One-Family Dwelling,Retail Dealer,Multiple Dwelling,Office
+One-Family Dwelling,Secondary Suite - Permanent,Office,Contractor,Retail Dealer
+One-Family Dwelling,Office,Retail Dealer,Secondary Suite - Permanent,Health Services
+Apartment House,Office,Retail Dealer,Multiple Dwelling,Duplex
+Office,Health Services,Retail Dealer,Apartment House,Restaurant Class 1
+Apartment House,Retail Dealer,Office,Multiple Dwelling,Wholesale  Dealer
+One-Family Dwelling,Office,Secondary Suite - Permanent,Retail Dealer,Contractor
+Office,One-Family Dwelling,Retail Dealer,Health Services,Apartment House
+Office,One-Family Dwelling,Multiple Dwelling,Apartment House,Contractor
+One-Family Dwelling,Office,Health Services,Duplex,Retail Dealer
+One-Family Dwelling,Retail Dealer,Secondary Suite - Permanent,Office,Duplex
+One-Family Dwelling,Secondary Suite - Permanent,Retail Dealer,Office,Contractor
+One-Family Dwelling,Secondary Suite - Permanent,Office,Contractor,Retail Dealer
+Office,One-Family Dwelling,Retail Dealer,Health Services,Apartment House
+Retail Dealer,Office,Health Services,One-Family Dwelling,Contractor
+One-Family Dwelling,Secondary Suite - Permanent,Contractor,Retail Dealer,Office
+One-Family Dwelling,Secondary Suite - Permanent,Contractor,Office,Retail Dealer
+One-Family Dwelling,Contractor,Office,Secondary Suite - Permanent,Retail Dealer
+Apartment House,Office,One-Family Dwelling,Wholesale  Dealer,Duplex

@@ -34,7 +34,7 @@ for i = 1:n
     sortedWithArea = freqWithArea(index,:);
     decategorize = cellstr(sortedWithArea);
     
-    fprintf('\nTop 10 business types for area %s: \n',LocalArea{i,1});
+    fprintf('\nTop 5 business types for area %s: \n',LocalArea{i,1});
     
     for k = 1:5
         fprintf('%s\n',decategorize{k,1});

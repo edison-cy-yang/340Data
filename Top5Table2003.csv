@@ -1,0 +1,23 @@
+C1,C2,C3,C4,C5
+Office,Apartment House,Retail Dealer,Restaurant Class 1,Dining Lounge *Historic*
+Office,Retail Dealer,Financial Services,Ltd Service Food Establishment,Restaurant Class 1
+Office,Wholesale  Dealer,Manufacturer,Retail Dealer - Food,Retail Dealer
+Apartment House,One-Family Dwelling,Retail Dealer,Duplex,Manufacturer
+One-Family Dwelling,Office,Retail Dealer,Secondary Suite - Phase Out *Historic*,Contractor
+One-Family Dwelling,Office,Retail Dealer,Health Services,Secondary Suite - Phase Out *Historic*
+Apartment House,Office,Multiple Dwelling,Retail Dealer,One-Family Dwelling
+Office,Health Services,Retail Dealer,Apartment House,Restaurant Class 1
+Apartment House,Multiple Dwelling,Retail Dealer,Office,Duplex
+One-Family Dwelling,Office,Retail Dealer,Health Services,Contractor
+One-Family Dwelling,Office,Retail Dealer,Apartment House,Health Services
+One-Family Dwelling,Office,Multiple Dwelling,Apartment House,Retail Dealer
+One-Family Dwelling,Duplex,Office,Health Services,Retail Dealer
+One-Family Dwelling,Retail Dealer,Office,Duplex,Secondary Suite - Phase Out *Historic*
+One-Family Dwelling,Retail Dealer,Secondary Suite - Phase Out *Historic*,Duplex,Office
+One-Family Dwelling,Secondary Suite - Phase Out *Historic*,Office,Retail Dealer,Contractor
+One-Family Dwelling,Office,Retail Dealer,Apartment House,Health Services
+One-Family Dwelling,Retail Dealer,Office,Health Services,Ltd Service Food Establishment
+One-Family Dwelling,Secondary Suite - Phase Out *Historic*,Retail Dealer,Office,Wholesale  Dealer
+One-Family Dwelling,Office,Contractor,Secondary Suite - Phase Out *Historic*,Retail Dealer
+One-Family Dwelling,Office,Retail Dealer,Contractor,Secondary Suite - Phase Out *Historic*
+One-Family Dwelling,Apartment House,Office,Wholesale  Dealer,Duplex
